@@ -15,7 +15,7 @@
 
 /* html styles */
 html {
-    background-color: brown;
+    background-color: rgb(255, 231, 179);
 }
 
 
@@ -23,5 +23,68 @@ html {
 body {
     background: url(br_paper.png);
     width: 90%;
-    margin: 0px auto 0px auto;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 5px 4% 5px 4%;
+}
+
+body section#views {
+    perspective: 1000px;
+}
+
+
+/* Nav styles */
+nav ul li {
+    display: inline-block;
+    width: 19.4%;
+    text-align: center;
+    background-color: rgb(232, 178, 70);
+    border: 10px groove rgb(215, 159, 47);
+    padding: 8px 0px 8px 0px;
+}
+
+nav ul li a {
+    color: rgb(255, 242, 204);
+}
+
+
+/* Figure styles */
+figure {
+    display: inline-block;
+    border: 6px double rgb(215, 159, 47);
+    padding: 20px 3.2% 8px 3.2%;
+    margin: 30px 0px 20px 0px;
+}
+
+figure#left {
+    transform: rotateY(40deg) translateZ(-100px);
+}
+
+figure#right {
+    transform: rotateY(-40deg) translateZ(-100px);
+}
+
+figure#center {
+    transform: translateZ(-90px);
+}
+
+figure#center-top {
+    transform: rotateX(-30deg) translateZ(-100px) translateY(50px);
+}
+
+figure#center-bottom {
+    transform: rotateX(30deg) translateZ(-100px) translateY(-50px);
+}
+
+figure img {
+    opacity: 0.8;
+    padding-bottom: 6px;
+}
+
+figcaption {
+    font-family: cursive;
+    font-size: 20px;
+    text-align: center;
+    opacity: 0.7;
+    text-shadow: black 2px 2px 4px;
 }
