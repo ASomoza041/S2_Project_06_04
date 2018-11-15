@@ -15,7 +15,7 @@
 
 /* html styles */
 html {
-    background-color: rgb(255, 231, 179);
+    background: linear-gradient()
 }
 
 
@@ -26,14 +26,53 @@ body {
     margin-left: auto;
     margin-right: auto;
     padding: 5px 4% 5px 4%;
+    min-width: 1300px;
+    box-shadow: rgb(144, 129, 98) 20px 9px 20px, rgb(144, 129, 98) -20px 9px 20px;
 }
 
 body section#views {
     perspective: 1000px;
 }
 
+body section#selling {
+    padding: 20px 1% 20px 1%;
+    width: 45%;
+    display: inline-block;
+    background-color: rgba(215, 159, 47, 0.3);
+    border: 5px solid rgba(215, 159, 47, 0.3);
+    border-radius: 20px;
+}
+
+body section#selling p {
+    text-indent: 26px;
+}
+
+body section#selling p::first-letter {
+    font-size: 25px
+}
+
+body section#listing_descr {
+    padding: 20px 1% 20px 1%;
+    display: inline-block;
+    width: 37%;
+    float: right;
+    background: radial-gradient(circle closest-corner at 50% 50%, white 15%, lightgray 50%);
+    border: 3px solid rgba(215, 159, 47, 0.3);
+    border-radius: 20px;
+    box-shadow: rgb(144, 129, 98) 10px 10px 10px;
+
+}
+
+section#nav2 {
+    padding: 20px 0px 0px 0px;
+
+}
 
 /* Nav styles */
+nav ul {
+    width: 100%;
+}
+
 nav ul li {
     display: inline-block;
     width: 19.4%;
@@ -41,23 +80,28 @@ nav ul li {
     background-color: rgb(232, 178, 70);
     border: 10px groove rgb(215, 159, 47);
     padding: 8px 0px 8px 0px;
+    border-radius: 30px;
 }
 
 nav ul li a {
     color: rgb(255, 242, 204);
 }
 
+section#nav2 nav ul li {
+    width: 24.5%;
+}
 
 /* Figure styles */
 figure {
     display: inline-block;
     border: 6px double rgb(215, 159, 47);
     padding: 20px 3.2% 8px 3.2%;
-    margin: 30px 0px 20px 0px;
+    margin: 30px 0px 30px 0px;
 }
 
 figure#left {
     transform: rotateY(40deg) translateZ(-100px);
+
 }
 
 figure#right {
