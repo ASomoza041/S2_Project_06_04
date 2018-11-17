@@ -14,12 +14,14 @@
 */
 
 /* html styles */
+/* The html styles hold style rules for the html element. The style rules set the background for the page. */
 html {
-    background: linear-gradient()
+    background: linear-gradient(to right, rgb(14, 190, 184), rgb(255, 113, 66));
 }
 
 
 /* body styles */
+/* The body styles hold style rules for the body element. The style rules set a background for the body as well as positioning/spacing styles. They also add box shadows for an improved look. The style rules also set up a perspective for the figure elements, which have transform style rules. */
 body {
     background: url(br_paper.png);
     width: 90%;
@@ -27,7 +29,7 @@ body {
     margin-right: auto;
     padding: 5px 4% 5px 4%;
     min-width: 1300px;
-    box-shadow: rgb(144, 129, 98) 20px 9px 20px, rgb(144, 129, 98) -20px 9px 20px;
+    box-shadow: rgb(163, 43, 4) 20px 9px 20px, rgb(3, 114, 110) -20px 9px 20px;
 }
 
 body section#views {
@@ -38,8 +40,8 @@ body section#selling {
     padding: 20px 1% 20px 1%;
     width: 45%;
     display: inline-block;
-    background-color: rgba(215, 159, 47, 0.3);
-    border: 5px solid rgba(215, 159, 47, 0.3);
+    background-color: rgba(63, 183, 234, 0.3);
+    border: 5px solid rgba(3, 114, 110, 0.3);
     border-radius: 20px;
 }
 
@@ -57,7 +59,7 @@ body section#listing_descr {
     width: 37%;
     float: right;
     background: radial-gradient(circle closest-corner at 50% 50%, white 15%, lightgray 50%);
-    border: 3px solid rgba(215, 159, 47, 0.3);
+    border: 3px solid rgba(163, 43, 4, 0.4);
     border-radius: 20px;
     box-shadow: rgb(144, 129, 98) 10px 10px 10px;
 
@@ -69,6 +71,7 @@ section#nav2 {
 }
 
 /* Nav styles */
+/* The nav styles hold style rules for the nav elements. The styles rules set up spacing/postioning for the nav elements. They also improve the look of the navs with multiple style rules like background color, color, and borders. */
 nav ul {
     width: 100%;
 }
@@ -77,8 +80,8 @@ nav ul li {
     display: inline-block;
     width: 19.4%;
     text-align: center;
-    background-color: rgb(232, 178, 70);
-    border: 10px groove rgb(215, 159, 47);
+    background-color: rgb(116, 77, 234);
+    border: 10px groove rgb(112, 66, 180);
     padding: 8px 0px 8px 0px;
     border-radius: 30px;
 }
@@ -92,32 +95,37 @@ section#nav2 nav ul li {
 }
 
 /* Figure styles */
+/* The figure styles hold style rules for the figure elements. The style rules give the figure elements a unique appearance with the transform styles. There are also some style for the images in the figure element itself and the figcaptions. */
 figure {
     display: inline-block;
-    border: 6px double rgb(215, 159, 47);
     padding: 20px 3.2% 8px 3.2%;
     margin: 30px 0px 30px 0px;
 }
 
 figure#left {
     transform: rotateY(40deg) translateZ(-100px);
+    border: 6px double rgb(14, 190, 184);
 
 }
 
 figure#right {
     transform: rotateY(-40deg) translateZ(-100px);
+    border: 6px double rgb(255, 113, 66);
 }
 
 figure#center {
     transform: translateZ(-90px);
+    border: 6px double rgb(116, 77, 234);
 }
 
 figure#center-top {
     transform: rotateX(-30deg) translateZ(-100px) translateY(50px);
+    border: 6px double rgb(116, 77, 234);
 }
 
 figure#center-bottom {
     transform: rotateX(30deg) translateZ(-100px) translateY(-50px);
+    border: 6px double rgb(116, 77, 234);
 }
 
 figure img {
